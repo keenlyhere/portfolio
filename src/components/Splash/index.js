@@ -7,6 +7,11 @@ import "./Splash.css";
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { useLoader } from '@react-three/fiber'
 import Cow from "./Cow";
+import Moon from "./Moon";
+import Cloud from "./Cloud";
+import { Star } from "./Star";
+import { BigStar } from "./BigStar";
+import { ScrollControls } from "@react-three/drei";
 
 extend({ OrbitControls: OrbitControls })
 
@@ -37,13 +42,20 @@ export default function Splash() {
 
     return (
         <>
-        <orbitControls args={ [ camera, gl.domElement ]} />
+        <orbitControls args={ [ camera, gl.domElement ]} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={false} />
 
         <directionalLight position={ [ 1, 5, 3 ] } intensity={ 0.9 } />
 
         <ambientLight intensity={ 0.3 } />
+        {/* <ScrollControls pages={ 2} damping={0.25}> */}
+
         {/* <Model scale={ 0.5 } rotation-y={ 4.7 } /> */}
         <Cow scale={ 0.5 } rotation-y={ 4.7 } />
+        <Moon scale={ 0.5 } rotation-y={ 4.7 } />
+        <Cloud />
+        <Star />
+        <BigStar />
+        {/* </ScrollControls> */}
 
         {/* <group ref={ groupRef }>
             <mesh position-x={ - 2 }>

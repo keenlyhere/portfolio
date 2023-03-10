@@ -8,5 +8,5 @@ export default function Cow() {
         materials.preload();
         loader.setMaterials(materials);
     })
-    return <primitive object={obj} scale={ 0.25 } position-y={ -2 } rotation-y={ 4.7 } />
+    return <primitive object={obj} scale={ 0.25 } position-x={ -1.8 } position-y={ -2.1 } rotation-y={ 5 } />
 }
