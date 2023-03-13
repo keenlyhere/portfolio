@@ -110,6 +110,8 @@ export function Overlay() {
                             <div className="About-container-content">
                                 <div className="About-text">
                                     <p className="About-paragraph">I first discovered my love for coding through the online virtual pets game, Neopets. Seeing the creative ways users were customizing their pages using HTML and CSS sparked my interest and led me to learn how to do it myself. Soon, I began helping others to customize their pages as well, and my passion for coding grew even stronger.</p>
+                                    <p className="About-paragraph">I love to learn new things and coding is the perfect outlet for me as it allows me to constantly expand my knowledge and skills. Through coding, I have been able to create a wide range of projects and each project presents a unique challenge that allows me to further hone my problem-solving skills.</p>
+                                    <p className="About-paragraph">Overall, my love for coding has only continued to grow over time, and I am excited to see where this passion takes me in the future. Whether it be working on a new project or simply learning a new coding language, I am always ready to dive in and take on new challenges.</p>
                                     <p>
                                         <span className="strong">Email:</span> keenlyhere@gmail.com
                                     </p>
