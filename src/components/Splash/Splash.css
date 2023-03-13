@@ -4,6 +4,8 @@
     /* background-color: lavender; */
     background: rgb(125,109,183);
     background: linear-gradient(180deg, rgba(125,109,183,1) 0%, rgba(224,184,200,1) 100%);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 .Intro-name-overlay {

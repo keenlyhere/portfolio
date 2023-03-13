@@ -123,7 +123,7 @@ export function Overlay() {
                                         <a href="https://angel.co/u/keenly-chung" target="_blank">
                                             <i className="lni lni-angellist sized"></i>
                                         </a>
-                                    <button className="About-contact">View my resume</button>
+                                    <a href="https://keenlychung.com/KeenlyChungResume.pdf" className="About-contact">View my resume</a>
 
                                     </div>
                                 </div>

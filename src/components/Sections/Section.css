@@ -10,6 +10,7 @@
     box-shadow: 4px 15px 36px -2px rgba(0,0,0,0.1);
     object-fit: contain;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .About-container-content {
@@ -70,6 +71,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
+    scroll-snap-align: center;
 }
 
 .Project-card {
@@ -187,6 +189,10 @@ a {
     border: 0;
     background-color: #7D6DB7;
     color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .strong {
