@@ -5,14 +5,19 @@
   "dependencies": {
     "@react-three/drei": "^9.50.3",
     "@react-three/fiber": "8.9",
+    "@react-three/rapier": "^0.14.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gsap": "^3.11.4",
     "lamina": "^1.1.23",
     "react": "^18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.7.1",
+    "react-visibility-sensor": "^5.1.1",
     "three": "^0.148.0"
   },
   "scripts": {

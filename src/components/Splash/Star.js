@@ -24,13 +24,16 @@
 //         )
 // }
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
 
 export function Star(props) {
   const { nodes, materials } = useGLTF("/star.glb");
+  const [ starSize, setStarSize ] = useState(false);
+  const scale = starSize ? 0.7 : 0.2;
+
 //   const materials = useLoader(MTLLoader, "/star.mtl");
   return (
     <group {...props} dispose={null}>
@@ -40,7 +43,9 @@ export function Star(props) {
         geometry={nodes.Star.geometry}
         rotation={[0.39, 1.5, 1.33]}
         position={ [ 0, 3, -5] }
-        scale={ 0.2 }
+        scale={scale}
+        onClick={() => setStarSize(!starSize)}
+
       >
         <meshStandardMaterial color="#fbe7a8" />
     </mesh>
